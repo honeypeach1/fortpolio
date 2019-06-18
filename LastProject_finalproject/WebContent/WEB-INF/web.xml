@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>LastProject</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <!-- 메인페이지조 - 봉재, 진휘, 성수 -->
+  
+  <!-- 유저의 페이지 이동에 대한 매핑 가상 주소 -->
+  <servlet>
+    <servlet-name>UserController</servlet-name>
+    <servlet-class>project.user.action.UserController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserController</servlet-name>
+    <url-pattern>*.do</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 호텔, 방 등록하기 매핑 주소 -->
+    <servlet>
+    <servlet-name>HotelRegistController</servlet-name>
+    <servlet-class>net.project.hotelregist.action.HotelRegistController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HotelRegistController</servlet-name>
+    <url-pattern>*.bo</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 리스트를 불러오는것에 대한 매핑 가상 주소 -->
+  <servlet>
+    <servlet-name>ListController</servlet-name>
+    <servlet-class>project.list.action.ListController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListController</servlet-name>
+    <url-pattern>*.li</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 관리자에 대한 매핑 가상 주소 -->
+  <servlet>
+    <servlet-name>AdminController</servlet-name>
+    <servlet-class>project.admin.action.AdminController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminController</servlet-name>
+    <url-pattern>*.ad</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <!-- 세부페이지조 -> 정현, 성환 -->
+   <servlet>
+    <servlet-name>RoomDetailsFrontController</servlet-name>
+    <servlet-class>net.roomdetails.action.RoomDetailsFrontController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RoomDetailsFrontController</servlet-name>
+    <url-pattern>*.rd</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+    <servlet-name>BookingFrontController</servlet-name>
+    <servlet-class>net.bookingpage.action.BookingFrontController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BookingFrontController</servlet-name>
+    <url-pattern>*.bp</url-pattern>
+  </servlet-mapping>
+  
+  
+  <!-- 검색 페이지조 -> 재원, 현범 -->
+  <servlet>
+    <servlet-name>HotelsController</servlet-name>
+    <servlet-class>net.project.hotellist.action.HotelsController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HotelsController</servlet-name>
+    <url-pattern>*.hdo</url-pattern>
+  </servlet-mapping>
+  
+  <resource-ref>
+    <description>hotels</description>
+    <res-ref-name>jdbc/hotels</res-ref-name>
+    <res-type>javax.sql.DataSource</res-type>
+    <res-auth>Container</res-auth>  
+  </resource-ref>
+</web-app>

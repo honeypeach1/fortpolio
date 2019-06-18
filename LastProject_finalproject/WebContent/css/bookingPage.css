@@ -1,0 +1,181 @@
+body {
+	background-color: grey;
+	background-image: url("./backgfull.png");
+	background-size: 500px;
+}
+
+.powerSpace {
+	margin-bottom: 100px;
+}
+
+div.bp-wrap {
+	margin: 15px auto 0 auto; /* div 태그 가운데 정렬 */
+	padding: 50px;
+	background-color: white;
+	border-radius: 5px;
+	width: 60%;
+	box-shadow: 1px 1px 7px 1px grey;
+}
+
+div.bp-block {
+	margin-bottom: 30px;
+}
+
+input {
+	border: 3px solid #00335e;
+	border-radius: 5px;
+	width: 75%;
+	height: 30px;
+	padding: .47058824rem .70588235rem
+}
+
+span.bp-font20 {
+	font-size: 20px;
+	margin-right: 15px;
+}
+
+span.bp-font16 {
+	font-size: 16px;
+}
+
+/* wrap1 - 시작 */
+div.divFlex {
+	display: flex;
+}
+
+div.name {
+	width: 35%;
+}
+
+div.name>input {
+	width: 80%;
+}
+
+span.bp-spanBlock {
+	display: block;
+}
+/* wrap1 - 끝 */
+
+/* wrap2 - 시작  */
+div.expirationDate {
+	width: 35%;
+}
+
+div.expirationDate>input {
+	width: 35%;
+}
+
+span.slash {
+	font-size: 35px;
+	margin: 0 10px;
+}
+
+div.cvcNum {
+	width: 35%;
+}
+
+div.cvcNum>input {
+	width: 35%;
+}
+/* wrap2 - 끝 */
+
+/* wrap3 - 시작 */
+* {
+	/* border: 1px solid red; */
+	
+}
+
+img {
+	width: 500px;
+}
+
+div.wrap3 {
+	text-align: center;
+}
+
+div.wrap3>h2 {
+	text-align: left;
+}
+
+div.imgCropping {
+	max-height: 250px;
+	overflow: hidden;
+}
+
+span.fstSpanText, span.scndSpanText {
+	display: inline-block;
+	width: 225px;
+}
+
+span.fstSpanTextS, span.scndSpanTextS {
+	display: inline-block;
+	width: 150px;
+}
+
+span.fstSpanTextL, span.scndSpanTextL {
+	display: inline-block;
+	width: 225px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+ul {
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+span.taxText {
+	display: block;
+	widht: 100%;
+	text-align: left;
+	margin-left: 5%;
+}
+
+div.pricePerDay {
+	border-radius: 5px;
+	background-color: #f8f9ff;
+	margin: 0 auto 5px auto;
+	width: 70%;
+}
+
+.pricePerDay a {
+	cursor: pointer;
+}
+
+.pricePerDay .hide {
+	display: none;
+}
+
+div.btn-update button {
+	background-color: #ffd24d;
+	padding: 2px;
+	border: 2px solid #b68c00;
+	border-radius: 6px;
+	box-shadow: 0 2px #666;
+	font-size: 20px;
+}
+
+div.btn-update button:ACTIVE {
+	box-shadow: 0 0 #666;
+	transform: translateY(2px);
+}
+/* wrap3 - 끝 */
+div.btn-update {
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+}
+
+div.modalDivMom {
+	display: inline;
+	text-align: center;
+}
+
+div.modalDiv {
+	width: 50%;
+	display: inline-block;
+	float: left;
+}

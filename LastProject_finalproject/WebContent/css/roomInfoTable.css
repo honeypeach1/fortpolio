@@ -1,0 +1,116 @@
+
+
+div.div-table{
+
+}
+
+/* table 테두리 */
+table{
+	border-collapse: separate;
+	border-spacing: 0;
+	border: 3px solid #00335e;
+	border-radius: 3px;
+	width: 100%;
+}
+tr > td{ /* 세로 테두리, 하단 테두리 */
+	border-left: 1px solid #c7c7c7;
+	border-bottom: 1px solid #c7c7c7;
+}
+
+/* table 1층 */
+tr.floor-one{
+	background-color: #00335e;
+	color: white;
+}
+td.floor-one{
+	padding: 1em;
+	border-left: none;
+}
+
+/* table 2층 */
+td.floor-two{
+	padding: 1em;
+}
+td.floor-two div.two_box{
+	float: left;
+	margin-right: 20px;
+}
+td.floor-two input, td.floor-two select{
+	border-radius: 5px;
+	height: 35px;
+}
+td.floor-two select{
+	width: 50px;
+}
+td.floor-two div.btn-update button{
+	background-color: #ffd24d;
+	padding: 2px;
+	
+	border: 2px solid #b68c00;
+	border-radius: 6px;
+	box-shadow: 0 2px #666;
+}
+td.floor-two div.btn-update button:ACTIVE{
+	box-shadow: 0 0 #666;
+	transform: translateY(2px);
+}	
+
+/* table 3층 */
+tr.floor-three td{
+	border-top: 3px solid #c7c7c7;
+	border-bottom: 3px solid #c7c7c7;
+	background-color: #e5e5e5;
+	
+	text-align: center;
+}
+
+/* table 4층 부터 : 룸 정보를 보여줌 */
+/* 객실 유형 */
+td.show-room-image{
+	padding: 2%;
+	text-align: center;
+}
+div.room-name{
+	margin-top: 15px;
+	font-weight: bold;
+}
+
+/* 옵션 */
+td.show-room-option > div{
+	font-size: small;
+	color: #425d34;
+}
+
+/* 객실당 1박 요금 */
+td.show-room-rate{
+	text-align: right;
+}
+td.show-room-rate > div > div.room-remained{
+	font-size: small;
+}
+td.show-room-rate > div > div.room-rate{
+	font-size: x-large;
+}
+
+/* 예약하기 버튼 */
+td.btn-reservation > div{
+	text-align: center;
+}
+td.btn-reservation > div > button{
+	background-color: #0063b6;
+	color: white;
+	padding: 5px;
+	
+	border: 2px solid #002341;
+	border-radius: 6px;
+	box-shadow: 0 2px #666;
+}
+td.btn-reservation > div > button:ACTIVE{
+	box-shadow: 0 0 #666;
+	transform: translateY(2px);
+}
+
+/* 예약하기 버튼 클릭시 나오는 Modal 창 - 시작 */
+
+
+/* 예약하기 버튼 클릭시 나오는 Modal 창 - 끝 */
