@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+$primary-color: #ee6956
+body
+  font-family: 'Prompt', sans-serif
+  background: #f5f6fa
+  h2
+    color: $primary-color
+    font-size: 26px
+    font-weight: normal
+    margin-top: 20px
+  h3
+    font-size: 20px
+    font-weight: lighter
+  h4
+    color: #7c7c7c
+    font-size: 18px
+    font-weight: lighter
+  p
+    color: #333
+.img-wrap
+  text-align: left
+  margin-top: 40px
+  padding-bottom: 100%
+  overflow: hidden
+  position: relative
+  img
+    width: 100%
+    position: absolute
+    margin: auto
+    min-height: 100%
+    min-width: 100%
+    object-fit: cover
+.card 
+  margin: 20px 0px
+.contact 
+  text-align: center
+  .about
+    padding: 10px 20px 0
+  hr
+    width: 100%
+  .infor
+    text-align: left
+    padding: 20px 20px 0
+  .social
+    margin: 0px 0 25px
+    .icon
+      display: inline-block
+      width: 45px
+      height: 45px
+      border: 2px solid #7c7c7c
+      color: #7c7c7c
+      padding: 5px
+      font-size: 22px
+      cursor: pointer
+      a
+        color: #7c7c7c
+      a:hover
+        border-color: $primary-color
+        color: $primary-color
+    .icon:hover
+      border-color: $primary-color
+      color: $primary-color
+.skills
+  padding: 20px
+  .skill-group
+    margin: 20px
+    h4
+      margin: 0 0 20px
+.skill
+  margin: 0px auto
+  .name
+    width: 27%
+    display: inline-block
+    text-align: left
+      
+.skill-bar 
+  margin: 0px 0px 2px 2px
+  width: 70%
+  height: 8px
+  background-color: #cfcfcf
+  border-radius: 50px
+  display: inline-block
+  
+.skill-bar-fill 
+  width: 70%
+  height: 100%
+  background-color: $primary-color
+  border-radius: 50px
+  
+.experience
+  padding: 20px
+  h5
+    font-size: 18px
+    font-weight: normal
+  p
+    font-size: 18px
+    font-weight: lighter
+    margin: 0
+  .item
+    margin: 10px
+  img
+    width: 100%
+    
+.projects
+  padding: 20px
+  h4
+    margin: 40px 0px 10px
+    color: #333
+    font-weight: bold
+  .item
+    p
+      width: 100%
+      margin: 0 !important
+      color: #7c7c7c
+    .title
+      margin: 0 !important
+      margin-left: 0px !important
+      width: fit-content
+      color: $primary-color
+      font-size: 20px
+    .catogory-wrap
+      color: #7c7c7c
+      float: right
+  .link
+    display: block
+    float: left
+    padding-top: 5px
+    span
+      text-decoration: underline
+      cursor: pointer
+      color: #7c7c7c
+    span:hover
+      color: #333
+      
+.catogory-wrap
+  display: block
+  float: right
+  
+.catogory
+  display: inline-block
+  padding: 3px 10px
+  font-size: 75%
+  color: #7c7c7c
+  border: 1px solid #7c7c7c
+  background-color: white
+  border-radius: 50px
+  margin: 5px 0
