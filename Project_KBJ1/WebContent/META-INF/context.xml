@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+
+	<!--
+	
+		커넥션 풀 데이터베이스 설정(오라클 연결 -> url주소)
+		각자 context.xml에 설정에 맞게 구현하여 사용 권장.
+		
+		username, password는 통합 데이터베이스로 관리할것이 아니기 때문에,
+		각자 맞는 계정과 비밀번호를 만들거나 기존에 유저 계정에 테이블 생성하여 연결및 사용해도 됨.
+		
+		유저 생성 SQL 쿼리문
+		CREATE USER 0000 IDENTIFIED BY 0000
+		DEFAULT TABLESPACE users
+  		TEMPORARY TABLESPACE temp;	
+  		
+  		권한 부여
+  		grant connect, resource, create session, create view to 0000;
+	-->
+	
+	<Resource
+	username="project"
+    password="1234"
+    url="jdbc:oracle:thin:@localhost:1521:xe"
+	driverClassName="oracle.jdbc.driver.OracleDriver"
+    type="javax.sql.DataSource"
+    auth="Container"
+    name="jdbc/orcl"/>
+</Context>
+
